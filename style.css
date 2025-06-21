@@ -1,3 +1,18 @@
+@media (max-width: 768px) {
+.jumbotron {
+    padding: 2rem 1rem;
+  }
+
+  .store {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer {
+    height: auto;
+    padding-bottom: 30px;
+  }
+}
 .jumbotron{
    margin-top: 50px;
    text-align: center;
@@ -10,13 +25,19 @@
     text-align: center;
 
 }
-.carddeck{
-    margin-top: 40px;
-     margin-left: 25px; 
-     display: flex;
-     gap: 30px;
-     margin-left: 160px;
+.carddeck {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px 10px 0 10px; /* Responsive margin */
 }
+.card {
+  flex: 1 1 300px; /* Let it shrink/grow */
+  max-width: 90vw; /* Prevent overflow */
+}
+
+
 .footer{
     height: 300px;
     margin-top: 40px;
